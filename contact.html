@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reservations &amp; Contact — Rashko Restaurant, Kano</title>
+  <meta name="description" content="Reserve a table at Rashko Restaurant, C41 Gwarzo Road, Kano. Open daily 11am – 11pm." />
+  <meta property="og:title" content="Reserve a Table — Rashko Restaurant" />
+  <meta property="og:description" content="C41 Gwarzo Road, Kano. Open daily 11am – 11pm." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="menu-hero">
+    <div class="container-narrow">
+      <span class="ornament eyebrow">Reserve</span>
+      <h1 class="display-xl">Join Us at the Table</h1>
+      <p>For parties of seven or more, please call ahead. We'll confirm your reservation within the hour.</p>
+    </div>
+  </section>
+
+  <section class="container-narrow contact-grid">
+    <div>
+      <form id="reservation-form" class="contact-form">
+        <div class="row two">
+          <div><label for="name" class="eyebrow" style="display:block;margin-bottom:0.5rem;">Name</label><input id="name" class="contact-input" type="text" required /></div>
+          <div><label for="phone" class="eyebrow" style="display:block;margin-bottom:0.5rem;">Phone</label><input id="phone" class="contact-input" type="tel" required /></div>
+        </div>
+        <div><label for="email" class="eyebrow" style="display:block;margin-bottom:0.5rem;">Email</label><input id="email" class="contact-input" type="email" required /></div>
+        <div class="row three">
+          <div><label for="date" class="eyebrow" style="display:block;margin-bottom:0.5rem;">Date</label><input id="date" class="contact-input" type="date" required /></div>
+          <div><label for="time" class="eyebrow" style="display:block;margin-bottom:0.5rem;">Time</label><input id="time" class="contact-input" type="time" required /></div>
+          <div><label for="guests" class="eyebrow" style="display:block;margin-bottom:0.5rem;">Guests</label><input id="guests" class="contact-input" type="number" min="1" max="20" value="2" required /></div>
+        </div>
+        <div>
+          <label for="notes" class="eyebrow" style="display:block;margin-bottom:0.5rem;">Special requests</label>
+          <textarea id="notes" rows="4" class="contact-input" placeholder="Allergies, occasion, seating preference…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top:1rem;align-self:flex-start;">Request Reservation</button>
+      </form>
+      <div id="reservation-success" class="contact-success" style="display:none;">
+        <p class="italic-script" style="font-size:1.875rem;margin:0;">Shukran!</p>
+        <p>Your request has been sent. We'll be in touch shortly to confirm.</p>
+      </div>
+    </div>
+
+    <aside class="contact-info">
+      <div class="info-block">
+        <div class="info-head">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="eyebrow">Find Us</span>
+        </div>
+        <p>C41 Gwarzo Road<br>New Site Janbulo, near Next Electro<br>Kano 700252, Nigeria</p>
+      </div>
+      <div class="info-block">
+        <div class="info-head">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span class="eyebrow">Hours</span>
+        </div>
+        <p>Monday – Sunday<br>11:00 — 23:00<br><span style="color:var(--muted-foreground);">Kitchen closes 22:30</span></p>
+      </div>
+      <div class="info-block">
+        <div class="info-head">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="eyebrow">Reservations</span>
+        </div>
+        <p>For parties of 7+, please call directly.<br><span style="color:var(--muted-foreground);">app.engager.tech</span></p>
+      </div>
+
+      <div class="map-wrap">
+        <iframe title="Rashko Restaurant location"
+          src="https://www.google.com/maps?q=c41+Gwarzo+Rd,+new+site+janbulo,+Kano&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </aside>
+  </section>
+
+  <div id="site-footer"></div>
+  <div id="bottom-nav"></div>
+  <div id="whatsapp-float"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/contact.js"></script>
+  <script>RASHKO.mountLayout({ active: "reserve" });</script>
+</body>
+</html>

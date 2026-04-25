@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Online — Rashko Restaurant, Kano</title>
+  <meta name="description" content="Build your order from Rashko's full menu and send it straight to our kitchen via WhatsApp. Delivery across central Kano in 35–50 minutes." />
+  <meta property="og:title" content="Order Online — Rashko Restaurant" />
+  <meta property="og:description" content="Pick your dishes, choose delivery or pickup, send via WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="order-hero">
+    <div class="container-narrow">
+      <span class="ornament eyebrow">Order Online</span>
+      <h1 class="display-xl">Build Your Order</h1>
+      <p>Choose your dishes, tell us where to send them. We'll confirm everything by WhatsApp before we begin cooking.</p>
+    </div>
+  </section>
+
+  <div class="container-narrow order-grid">
+    <div id="order-menu-root" class="order-menu"></div>
+    <div id="cart-root"></div>
+  </div>
+
+  <div id="site-footer"></div>
+  <div id="bottom-nav"></div>
+  <div id="whatsapp-float"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/order.js"></script>
+  <script>RASHKO.mountLayout({ active: "order" });</script>
+</body>
+</html>
